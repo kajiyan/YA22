@@ -176,6 +176,7 @@ window.onload = function () {
                 ctx.arc(
                     enemy[i].position.x,
                     enemy[i].position.y,
+                    enemy[i].size,
                     0, Math.PI * 2, false
                 );
                 ctx.closePath();
@@ -188,7 +189,7 @@ window.onload = function () {
         // 敵を描く
         ctx.fill();
 
-        if (run) { setTimeout(arguments.callee, fps); }
+        // if (run) { setTimeout(arguments.callee, fps); }
     })();
 
 };
